@@ -1,0 +1,9 @@
+.root { display:flex; flex-direction:column; gap:2px; }
+.item {
+  display:flex; align-items:flex-start; gap:1.25rem;
+  background:var(--card); border:1px solid var(--border);
+  padding:1.25rem 1.5rem; transition:border-color 0.2s, transform 0.2s;
+}
+.item:hover { border-color:rgba(0,217,255,0.25); transform:translateX(4px); }
+.index { font-family:var(--mono); font-size:1.5rem; font-weight:700; color:rgba(0,217,255,0.15); flex-shrink:0; line-height:1; }
+.text { font-family:var(--mono); font-size:0.78rem; color:var(--muted); line-height:1.7; padding-top:0.1rem; }

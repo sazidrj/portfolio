@@ -1,0 +1,7 @@
+.footer {
+  border-top:1px solid var(--border); padding:2rem 3rem;
+  display:flex; align-items:center; justify-content:space-between;
+  position:relative; z-index:1;
+}
+.copy,.sub { font-family:var(--mono); font-size:0.65rem; color:var(--muted); }
+@media(max-width:768px){ .footer{flex-direction:column; gap:0.5rem; text-align:center; padding:1.5rem;} }

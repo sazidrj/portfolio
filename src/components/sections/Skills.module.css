@@ -1,0 +1,9 @@
+.skillsGrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1px; background:var(--border); }
+.group { background:var(--card); padding:2rem; }
+.groupLabel { font-family:var(--mono); font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem; padding-bottom:0.5rem; border-bottom:1px solid var(--border); }
+.tags { display:flex; flex-wrap:wrap; gap:0.4rem; }
+.statsRow { display:flex; gap:2px; background:var(--border); margin-top:3rem; }
+.statCard { flex:1; background:var(--card); padding:2.5rem 2rem; text-align:center; }
+.statNum { font-family:var(--sans); font-size:3.5rem; font-weight:800; color:var(--accent); display:block; line-height:1; margin-bottom:0.5rem; }
+.statLabel { font-family:var(--mono); font-size:0.65rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.15em; }
+@media(max-width:768px){ .statsRow{flex-wrap:wrap;} .statCard{min-width:50%;} }
