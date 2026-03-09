@@ -117,8 +117,8 @@ export const projects = [
       examples: [
         {
           label: "Portrait",
-          original: "${base}/projects/jpeg/original.jpeg",
-          encoded: "/projects/jpeg/encoded.png",
+          original: `${base}/projects/jpeg/original.jpeg`,
+          encoded: `${base}/projects/jpeg/encoded.png`,
           quality: 50,
           compressionRatio: "8.2x",
           psnr: "34.1 dB",
@@ -163,10 +163,10 @@ export const projects = [
     ],
     media: {
       type: "morphing",
-      sourceA: "${base}/projects/morphing/img1.jpg",      // ← your source A image
-      sourceB: "${base}/projects/morphing/img21.jpg",      // ← your source B image
-      gif: "${base}/projects/morphing/morphed2.gif",             // ← your transition GIF
-      strip: "${base}/projects/morphing/imagemorphing.png",      // ← your 16-frame strip image
+      sourceA: `${base}/projects/morphing/img1.jpg`,      // ← your source A image
+      sourceB: `${base}/projects/morphing/img21.jpg`,      // ← your source B image
+      gif: `${base}/projects/morphing/morphed2.gif`,             // ← your transition GIF
+      strip: `${base}/projects/morphing/imagemorphing.png`,      // ← your 16-frame strip image
       fromLabel: "Source A",
       toLabel: "Source B",
       frames: 20,
@@ -193,27 +193,27 @@ export const projects = [
       type: "image-slider",
       slides: [
         {
-          src: "${base}/projects/ml/kernel_svm.png",
+          src: `${base}/projects/ml/kernel_svm.png`,
           title: "Kernel SVM",
           caption: ""
         },
         {
-          src: "/projects/ml/neural_network.png",
+          src: `${base}/projects/ml/neural_network.png`,
           title: "Hand Gesture Dataset — Neural Network",
           caption: "9-class hand gesture dataset (digits 1–9) used to train a multi-layer neural network implemented from scratch. Each class represents a distinct hand pose. The network was trained using backpropagation and gradient descent coded manually in NumPy.",
         },
         {
-          src: "${base}/projects/ml/polynomial.png",
+          src: `${base}/projects/ml/polynomial.png`,
           title: "Polynomial Regression",
           caption: ""
         },
         {
-          src: "/projects/ml/support_vectors.png",
+          src: `${base}/projects/ml/support_vectors.png`,
           title: "Support Vector",
           caption: ""
         },
         {
-          src: "${base}/projects/ml/ridge.png",
+          src: `${base}/projects/ml/ridge.png`,
           title: "Ridge Regression",
           caption: ""
         }
