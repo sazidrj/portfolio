@@ -1,11 +1,13 @@
 import Reveal from '../ui/Reveal';
+import SkillsOrb from '../3d/SkillsOrb';
 import { skills, stats } from '../../data/portfolioData';
 import s from './Skills.module.css';
 
 export default function Skills() {
   return (
-    <section className="section" id="skills">
-      <div className="section-inner">
+    <section className="section" id="skills" style={{ position: 'relative', overflow: 'hidden' }}>
+      <SkillsOrb />
+      <div className="section-inner" style={{ position: 'relative', zIndex: 1 }}>
         <div className="section-label">Expertise</div>
         <h2 className="section-h2">Technical Skills</h2>
         <Reveal>
