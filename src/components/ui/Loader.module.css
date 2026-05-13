@@ -1,0 +1,115 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminal {
+  width: 520px;
+  max-width: 90vw;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: 0 0 80px rgba(0,217,255,0.08), 0 0 200px rgba(0,0,0,0.8);
+}
+
+.chrome {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.chromeTitle {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+  margin-left: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.body {
+  padding: 2rem;
+}
+
+.name {
+  font-family: var(--sans);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.sub {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 1.25rem 0;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  min-height: 120px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.lineText {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.cursor {
+  color: var(--accent);
+  animation: blink 1s infinite;
+  font-size: 0.7rem;
+}
+
+.progressWrap {
+  height: 2px;
+  background: var(--border);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  transition: width 0.35s cubic-bezier(0.16,1,0.3,1);
+  box-shadow: 0 0 10px rgba(0,217,255,0.4);
+}
+
+.progressNum {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  color: var(--muted);
+  text-align: right;
+}

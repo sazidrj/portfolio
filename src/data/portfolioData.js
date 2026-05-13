@@ -11,13 +11,21 @@ export const personalInfo = {
   tagline: "Building production-grade AI systems — multi-agent pipelines, LLM applications, and intelligent data infrastructure.",
 };
 
+export const roles = [
+  'AI / ML Engineer',
+  'LLM Developer',
+  'Full-Stack Developer',
+  'ML Researcher',
+];
+
 export const experience = [
   {
     id: "tiger",
     company: "Tiger Analytics",
-    location: "Chennai",
+    location: "Chennai, India",
     period: "Jan 2025 — Present",
     role: "AIML Associate",
+    color: "#00d9ff",
     bullets: [
       "Built a production-grade <b>LLM-powered analytical assistant</b> using multi-agent architecture handling SQL, simulations, and FAQ workflows.",
       "Developed a <b>Natural Language → SQL agent</b> that converts business questions into optimized queries and auto-generates insights & visualizations.",
@@ -29,9 +37,10 @@ export const experience = [
   {
     id: "deepedge",
     company: "DeepEdge.ai",
-    location: "Hyderabad",
+    location: "Hyderabad, India",
     period: "Sep 2024 — Nov 2024",
     role: "Machine Learning Engineer Intern",
+    color: "#7c3aed",
     bullets: [
       "Spearheaded enhancement of a <b>video annotation tool</b>, improving accuracy and efficiency for large-scale ML training datasets.",
       "Developed <b>Constructor and De-Constructor models</b> using VLMs for Security & Surveillance — object detection, tracking, and event analysis.",
@@ -40,9 +49,10 @@ export const experience = [
   {
     id: "iitropar",
     company: "IIT Ropar",
-    location: "Rupnagar",
+    location: "Rupnagar, India",
     period: "Jul 2023 — May 2024",
     role: "Researcher",
+    color: "#10b981",
     bullets: [
       "Conducted research on <b>automated chart data extraction and summarization</b> using deep learning on diverse chart image datasets.",
       "Fine-tuned and evaluated LLMs (BART, T5, Phi-2, LLaMA2) for <b>accessible chart summaries</b> targeting visually impaired users.",
@@ -52,9 +62,10 @@ export const experience = [
   {
     id: "cognizant",
     company: "Cognizant",
-    location: "Kolkata",
+    location: "Kolkata, India",
     period: "Mar 2021 — Aug 2022",
     role: "Programmer Analyst",
+    color: "#f9a825",
     bullets: [
       "Developed and maintained <b>high-performance web applications</b> using Angular, Core Java, Spring Framework, and MySQL.",
       "Built scalable, reliable applications with HTML, Bootstrap, JavaScript, and JUnit test coverage.",
@@ -63,10 +74,10 @@ export const experience = [
 ];
 
 export const skills = [
-  { label: "Languages", tags: ["Python", "Core Java", "C++", "SQL", "JavaScript"] },
-  { label: "AI / ML", tags: ["Agentic AI", "RAG", "Prompt Engineering", "LLM Fine-tuning", "Vector Search", "NLP", "HuggingFace", "TensorFlow", "Scikit-learn"] },
-  { label: "Cloud", tags: ["Vertex AI", "BigQuery", "GCS Buckets", "AWS S3", "AWS EC2", "Log Explorer"] },
-  { label: "Tools & Databases", tags: ["Git", "GitHub", "BitBucket", "MySQL", "MMDetection", "Spring Framework", "Angular"] },
+  { label: "Languages", tags: ["Python", "Core Java", "C++", "SQL", "JavaScript"], color: "#00d9ff" },
+  { label: "AI / ML", tags: ["Agentic AI", "RAG", "Prompt Engineering", "LLM Fine-tuning", "Vector Search", "NLP", "HuggingFace", "TensorFlow", "Scikit-learn"], color: "#7c3aed" },
+  { label: "Cloud", tags: ["Vertex AI", "BigQuery", "GCS Buckets", "AWS S3", "AWS EC2", "Log Explorer"], color: "#10b981" },
+  { label: "Tools & Frameworks", tags: ["Git", "GitHub", "BitBucket", "MySQL", "MMDetection", "Spring Framework", "Angular"], color: "#f9a825" },
 ];
 
 export const stats = [
@@ -112,8 +123,6 @@ export const projects = [
     ],
     media: {
       type: "jpeg-demo",
-      // Replace null values with actual image paths once you add images to /public/projects/jpeg/
-      // Example: original: "/projects/jpeg/portrait_original.jpg"
       examples: [
         {
           label: "Portrait",
@@ -163,10 +172,10 @@ export const projects = [
     ],
     media: {
       type: "morphing",
-      sourceA: b() +'/projects/morphing/img1.jpg',      // ← your source A image
-      sourceB: b() + '/projects/morphing/img21.jpg',      // ← your source B image
-      gif: b() + '/projects/morphing/morphed2.gif',             // ← your transition GIF
-      strip: b() + '/projects/morphing/imagemorphing.png',      // ← your 16-frame strip image
+      sourceA: b() +'/projects/morphing/img1.jpg',
+      sourceB: b() + '/projects/morphing/img21.jpg',
+      gif: b() + '/projects/morphing/morphed2.gif',
+      strip: b() + '/projects/morphing/imagemorphing.png',
       fromLabel: "Source A",
       toLabel: "Source B",
       frames: 20,
@@ -175,10 +184,10 @@ export const projects = [
   },
   {
     id: "ml-course",
-    num: "06",
+    num: "04",
     title: "ML Algorithms from Scratch",
     shortDesc: "Implemented core ML algorithms from scratch in Python during M.Tech — covering classification, regression, SVMs, PCA, and neural networks.",
-    longDesc: "As part of the Machine Learning course at IIT Ropar, implemented foundational ML algorithms entirely from scratch without sklearn model implementations — building deep intuition for the mathematics behind each method. Covered PAC learnability, hypothesis testing, linear & polynomial regression, logistic regression, SVM with kernel tricks, PCA for dimensionality reduction, decision trees, gradient descent variants, and a multi-layer neural network. Applied these to real datasets including hand gesture recognition (digits 1–9) and admission score classification.",
+    longDesc: "As part of the Machine Learning course at IIT Ropar, implemented foundational ML algorithms entirely from scratch without sklearn model implementations — building deep intuition for the mathematics behind each method. Covered PAC learnability, hypothesis testing, linear & polynomial regression, logistic regression, SVM with kernel tricks, PCA for dimensionality reduction, decision trees, gradient descent variants, and a multi-layer neural network.",
     tech: ["Python", "NumPy", "Matplotlib", "SciPy", "Gradient Descent", "Backpropagation"],
     period: "Jan 2023 — Apr 2023",
     type: "research",
@@ -192,33 +201,50 @@ export const projects = [
     media: {
       type: "image-slider",
       slides: [
-        {
-          src: b() + '/projects/ml/kernel_svm.png',
-          title: "Kernel SVM",
-          caption: ""
-        },
+        { src: b() + '/projects/ml/kernel_svm.png', title: "Kernel SVM", caption: "" },
         {
           src: b() + '/projects/ml/neural_network.png',
           title: "Hand Gesture Dataset — Neural Network",
-          caption: "9-class hand gesture dataset (digits 1–9) used to train a multi-layer neural network implemented from scratch. Each class represents a distinct hand pose. The network was trained using backpropagation and gradient descent coded manually in NumPy.",
+          caption: "9-class hand gesture dataset (digits 1–9) used to train a multi-layer neural network implemented from scratch.",
         },
-        {
-          src: b() +'/projects/ml/polynomial.png',
-          title: "Polynomial Regression",
-          caption: ""
-        },
-        {
-          src: b() +'/projects/ml/support_vectors.png',
-          title: "Support Vector",
-          caption: ""
-        },
-        {
-          src: b() + '/projects/ml/ridge.png',
-          title: "Ridge Regression",
-          caption: ""
-        }
+        { src: b() +'/projects/ml/polynomial.png', title: "Polynomial Regression", caption: "" },
+        { src: b() +'/projects/ml/support_vectors.png', title: "Support Vector", caption: "" },
+        { src: b() + '/projects/ml/ridge.png', title: "Ridge Regression", caption: "" },
       ],
     },
+  },
+];
+
+export const showcase = [
+  {
+    id: "portfolio-site",
+    title: "AI Engineer Portfolio",
+    url: "sazidrj.github.io/portfolio",
+    desc: "This site — production-grade 3D portfolio with WebGL knowledge graph, interactive project demos, and smooth scroll animations.",
+    tech: ["React", "Three.js", "Vite"],
+    status: "live",
+    color1: "rgba(0,217,255,0.15)",
+    color2: "rgba(124,58,237,0.15)",
+  },
+  {
+    id: "client-saas",
+    title: "SaaS Dashboard",
+    url: "your-saas-project.com",
+    desc: "Full-stack analytics dashboard with real-time data visualization, role-based access control, and REST API integration.",
+    tech: ["Next.js", "Tailwind", "Prisma"],
+    status: "coming-soon",
+    color1: "rgba(124,58,237,0.15)",
+    color2: "rgba(249,168,37,0.15)",
+  },
+  {
+    id: "client-ecom",
+    title: "E-Commerce Platform",
+    url: "your-ecommerce.com",
+    desc: "Modern e-commerce site with product catalog, cart, checkout flow, Stripe payments, and admin panel.",
+    tech: ["Next.js", "Stripe", "Sanity"],
+    status: "coming-soon",
+    color1: "rgba(16,185,129,0.15)",
+    color2: "rgba(0,217,255,0.15)",
   },
 ];
 
@@ -229,6 +255,8 @@ export const education = [
     school: "IIT Ropar",
     period: "Aug 2022 — May 2024",
     location: "Rupnagar, Punjab",
+    color: "#00d9ff",
+    icon: "AI",
   },
   {
     id: "kiet",
@@ -236,5 +264,7 @@ export const education = [
     school: "KIET Group of Institutions",
     period: "Aug 2017 — Jul 2021",
     location: "Ghaziabad, UP",
+    color: "#7c3aed",
+    icon: "CS",
   },
 ];
